@@ -1,0 +1,56 @@
+          <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
+            <ul class="order-position__list">
+              <li class="order-position__list-item--close-button"><span class="visually-hidden">Удалить позицию</span>
+              </li>
+              <li class="order-position__list-item--img"><img class="order-position__icecream-img"
+                                                              src="img/isecream1_small.png" width="33"
+                                                              height="33" alt="Пломбир с апельсиновым джемом">
+              </li>
+              <li class="order-position__list-item&#45;&#45;name">
+                            <textarea class="icecream-order-list icecream--name" name="icecream-name" cols="30"
+                                      rows="2" readonly>Пломбир с апельсиновым джемом</textarea>
+              </li>
+              <li class="order-position__list-item--weight">
+                            <textarea class="icecream-order-list icecream--weight" name="icecream-weight"
+                                      cols="11" rows="2" readonly>1,5 кг</textarea>
+              </li>
+              <li class="order-position__list-item--weight">&nbsp;x&nbsp;</li>
+              <!-- TODO Спросить у Кости, правильно ли так делать разделитель-->
+              <li class="order-position__list-item--cost"><textarea class="icecream-order-list icecream--cost"
+                                                                    name="icecream-cost" cols="11"
+                                                                    rows="2" readonly>200 руб.</textarea></li>
+              <li class="order-position__list-item--price"><textarea
+                class="icecream-order-list icecream--price" name="icecream-price" cols="11" rows="2"
+                readonly>300 руб.</textarea>
+              </li>
+            </ul>
+            <ul class="order-position__list">
+              <li class="order-position__list-item--close-button"><span class="visually-hidden">Удалить позицию</span>
+              </li>
+              <li class="order-position__list-item--img"><img class="order-position__icecream-img"
+                                                              src="img/isecream2_small.png" width="33"
+                                                              height="33" alt="Пломбир с апельсиновым джемом">
+              </li>
+              <li class="order-position__list-item&#45;&#45;name">
+                            <textarea
+                              class="icecream-order-list icecream--name" name="icecream-name" cols="30"
+                              rows="2" readonly>Клубничный пломбир с присыпкой  из белого шоколада</textarea>
+              </li>
+              <li class="order-position__list-item--weight">
+                            <textarea
+                              class="icecream-order-list icecream--weight" name="icecream-weight"
+                              cols="11" rows="2" readonly>1,5 кг</textarea>
+              </li>
+              <li class="order-position__list-item--weight">&nbsp;x&nbsp;</li>
+              <!-- TODO Спросить у Кости, правильно ли так делать разделитель-->
+              <li class="order-position__list-item--cost"><textarea class="icecream-order-list icecream--cost"
+                                                                    name="icecream-cost" cols="11"
+                                                                    rows="2" readonly>300 руб.</textarea></li>
+              <li class="order-position__list-item--price"><textarea
+                class="icecream-order-list icecream--price" name="icecream-price" cols="11"
+                rows="2" readonly>450 руб.</textarea></li>
+            </ul>
+            <p class="order-form__total-text">Итого:&nbsp;</p>
+            <p class="order-form__total-price">750 руб.</p>
+            <button class="button order_form__submit-button button--red" type="submit">Оформить заказ</button>
+          </form>
