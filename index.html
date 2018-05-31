@@ -10,90 +10,98 @@
 <header class="main-header green-background">
   <div class="container">
     <div class="main-header__first-line">
-    <h1 class="visually-hidden">Магазин мороженого Gllacy Shop</h1>
-    <nav class="main-header-nav">
-      <img class="main-header-nav__logo" src="img/Logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
-      <ul class="main-header-nav__list" aria-label="Главное меню">
-        <li class="main-header-nav__item"><a class="main-header-nav__link" href="catalog.html">Каталог</a>
-          <ul class="main-header-sub-menu__list">
-            <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Новинки</a>
-            </li>
-            <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Сливочное</a>
-            </li>
-            <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Щербеты</a>
-            </li>
-            <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Фруктовый
-              лед</a></li>
-            <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Мелорин</a>
-            </li>
-          </ul>
+      <h1 class="visually-hidden">Магазин мороженого Gllacy Shop</h1>
+      <nav class="main-header-nav">
+        <img class="main-header-nav__logo" src="img/Logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
+        <ul class="main-header-nav__list" aria-label="Главное меню">
+          <li class="main-header-nav__item"><a class="main-header-nav__link" href="catalog.html">Каталог</a>
+            <ul class="main-header-sub-menu__list">
+              <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Новинки</a>
+              </li>
+              <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Сливочное</a>
+              </li>
+              <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Щербеты</a>
+              </li>
+              <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Фруктовый
+                лед</a></li>
+              <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Мелорин</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-header-nav__item"><a class="main-header-nav__link" href="#">Доставка и оплата</a></li>
+          <li class="main-header-nav__item"><a class="main-header-nav__link" href="#">О Компании</a></li>
+        </ul>
+      </nav>
+      <ul class="search-enter-cart__list">
+        <li class="search-enter-cart__item">
+          <button class="button search-enter-cart_item__search-button green--button" type="button"><span
+            class="visually-hidden">Поиск</span></button>
+          <div class="modal-window-search visually-hidden">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+              <input class="search-form__input" name="search" type="search" placeholder="Что ищем?"
+                     aria-label="Поле поиска">
+            </form>
+          </div>
         </li>
-        <li class="main-header-nav__item"><a class="main-header-nav__link" href="#">Доставка и оплата</a></li>
-        <li class="main-header-nav__item"><a class="main-header-nav__link" href="#">О Компании</a></li>
+        <li class="search-enter-cart__item enter--popup">
+          <button class="button search-enter-cart_item__enter-button green--button" type="button">Вход</button>
+          <div class="modal-window-enter visually-hidden">
+            <form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="enter-form__first-internal-container">
+                <input class="enter-form__input" name="user-email" type="email"
+                       placeholder="Электронная почта">
+                <input class="enter-form__input" name="user-password" type="password" placeholder="Пароль">
+              </div>
+              <div class="enter-form__second-internal-container">
+                <button class="button enter-form__enter-button button--red" type="submit">Войти</button>
+                <div>
+                  <p><a class="modal-window-enter__link" href="#">Забыли пароль?</a></p>
+                  <p><a class="modal-window-enter__link" href="#">Новая регистрация</a></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+        <li class="search-enter-cart__item">
+          <button class="button search-enter-cart_item__cart-button green--button" type="button" aria-label="Корзина">
+            Пусто
+          </button>
+          <div class="modal-window-order visually-hidden">
+            <!--Тут скорее всего накосячил. Но какого-то друго выхода не придумал, чтобы сделать работающую форму отправки. Текстареа вместо инпутов использовал потому, что в текстареа можно предсумотреть перенос текста на вторую строку, если вдруг название длиное будет. А в инпуте так не сделаешь-->
+          
+          </div>
+        </li>
       </ul>
-    </nav>
-    <ul class="search-enter-cart__list">
-      <li class="search-enter-cart__item">
-        <button class="button search-enter-cart_item__search-button green--button" type="button"><span
-          class="visually-hidden">Поиск</span></button>
-        <div class="modal-window-search visually-hidden">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="search-form__input" name="search" type="search" placeholder="Что ищем?"
-                   aria-label="Поле поиска">
-          </form>
-        </div>
-      </li>
-      <li class="search-enter-cart__item">
-        <button class="button search-enter-cart_item__enter-button green--button" type="button">Вход</button>
-        <div class="modal-window-enter visually-hidden">
-          <form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="enter-form__mail-input" name="user-email" type="email"
-                   placeholder="Электронная почта">
-            <input class="enter-form__password-input" name="user-password" type="password" placeholder="Пароль">
-            <button class="button enter-form__enter-button green--button" type="submit">Войти</button>
-          </form>
-          <a class="modal-window-enter__link" href="#">Забыли пароль?</a>
-          <a class="modal-window-enter__link" href="#">Новая регистрация</a>
-        </div>
-      </li>
-      <li class="search-enter-cart__item">
-        <button class="button search-enter-cart_item__cart-button green--button" type="button" aria-label="Корзина">Пусто</button>
-        <div class="modal-window-order visually-hidden">
-          <!--Тут скорее всего накосячил. Но какого-то друго выхода не придумал, чтобы сделать работающую форму отправки. Текстареа вместо инпутов использовал потому, что в текстареа можно предсумотреть перенос текста на вторую строку, если вдруг название длиное будет. А в инпуте так не сделаешь-->
-
-        </div>
-      </li>
-    </ul>
     </div>
     <div class="main-header__second-line">
-    <p class="main-header__working-hours">С 10 до 20 ежедневно</p>
-    <p class="main-header__tel-text"><a class="main-header__tel" href="tel:+78124502525">8&nbsp;812&nbsp;450-25-25</a>
-    </p>
+      <p class="main-header__working-hours">С 10 до 20 ежедневно</p>
+      <p class="main-header__tel-text"><a class="main-header__tel" href="tel:+78124502525">8&nbsp;812&nbsp;450-25-25</a>
+      </p>
     </div>
   </div>
 </header>
-    <section class="slider">
-      <h2 class="visually-hidden">Слайдер</h2>
-      <div class="slider__controls">
-        <i class="slider__controls-button button--active"></i>
-        <i class="slider__controls-button"></i>
-        <i class="slider__controls-button"></i>
-      </div>
-      <ul class="slider-list">
-        <li class="slider-list__item slider-list__item--first-slide">
-          <h3 class="slider-slogan slider-slogan--first-slide">Крем-брюле и пломбир с малиновым джемом</h3>
-          <a class="button slider--button button--red" href="#">Давайте оба!</a>
-        </li>
-        <li class="slider-list__item slider-list__item--second-slide">
-          <h3 class="slider-slogan slider-slogan--second-slide">Шоколадный пломбир и лимонный сорбет</h3>
-          <a class="button slider--button button--red" href="#">Давайте оба!</a>
-        </li>
-        <li class="slider-list__item slider-list__item--third-slide">
-          <h3 class="slider-slogan slider-slogan--third-slide">Пломбир с помадкой и клубничный щербет</h3>
-          <a class="button slider--button button--red" href="#">Давайте оба!</a>
-        </li>
-      </ul>
-    </section>
+<section class="slider">
+  <h2 class="visually-hidden">Слайдер</h2>
+  <div class="slider__controls">
+    <i class="slider__controls-button button--active"></i>
+    <i class="slider__controls-button"></i>
+    <i class="slider__controls-button"></i>
+  </div>
+  <ul class="slider-list">
+    <li class="slider-list__item slider-list__item--first-slide">
+      <h3 class="slider-slogan slider-slogan--first-slide">Крем-брюле и пломбир с малиновым джемом</h3>
+      <a class="button slider--button button--red" href="#">Давайте оба!</a>
+    </li>
+    <li class="slider-list__item slider-list__item--second-slide">
+      <h3 class="slider-slogan slider-slogan--second-slide">Шоколадный пломбир и лимонный сорбет</h3>
+      <a class="button slider--button button--red" href="#">Давайте оба!</a>
+    </li>
+    <li class="slider-list__item slider-list__item--third-slide">
+      <h3 class="slider-slogan slider-slogan--third-slide">Пломбир с помадкой и клубничный щербет</h3>
+      <a class="button slider--button button--red" href="#">Давайте оба!</a>
+    </li>
+  </ul>
+</section>
 
 <main>
   <section class="bonuses">
@@ -235,6 +243,6 @@
     Academy</a> &copy; 2017</p>
 </footer>
 
-
+<script src="js/modal-enter.js"></script>
 </body>
 </html>
