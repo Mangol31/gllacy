@@ -6,120 +6,146 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="main-header">
-  <nav class="main-header-nav">
-    <h1 class="visually-hidden">Магазин мороженого Gllacy Shop</h1>
-    <img class="main-header-nav__logo" src="img/logo.svg" width="154" height="64" alt="Логотипа Gllacy Shop">
-    <ul class="main-header-nav__list" aria-label="Главное меню">
-      <li class="main-header-nav__item"><a class="main-header-nav__link" href="catalog.html">Каталог</a>
-        <ul class="main-header-sub-menu__list">
-          <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Новинки</a>
+<header class="main-header green-background">
+  <div class="container">
+    <div class="main-header__first-line">
+      <h1 class="visually-hidden">Магазин мороженого Gllacy Shop</h1>
+      <nav class="main-header-nav">
+        <a href="index.html" class="main-nav__logo">
+          <img class="main-header-nav__logo" src="img/Logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
+        </a>
+        <ul class="main-header-nav__list" aria-label="Главное меню">
+          <li class="main-header-nav__item"><a class="main-header-nav__link active--page"
+                                               href="catalog.html">Каталог</a>
+            <ul class="main-header-sub-menu__list">
+              <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Новинки</a>
+              </li>
+              <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Сливочное</a>
+              </li>
+              <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Щербеты</a>
+              </li>
+              <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Фруктовый
+                лед</a></li>
+              <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Мелорин</a>
+              </li>
+            </ul>
           </li>
-          <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Сливочное</a>
-          </li>
-          <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Щербеты</a>
-          </li>
-          <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Фруктовый
-            лед</a></li>
-          <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Мелорин</a>
-          </li>
+          <li class="main-header-nav__item"><a class="main-header-nav__link" href="#">Доставка и оплата</a></li>
+          <li class="main-header-nav__item"><a class="main-header-nav__link" href="#">О Компании</a></li>
         </ul>
-      </li>
-      <li class="main-header-nav__item"><a class="main-header-nav__link" href="#">Доставка и оплата</a></li>
-      <li class="main-header-nav__item"><a class="main-header-nav__link" href="#">О компании</a></li>
-    </ul>
-  </nav>
-  <ul class="search-enter-cart__list">
-    <li class="search-enter-cart__item">
-      <button class="button search-enter-cart_item__search-button green--button" type="button"><span
-        class="visually-hidden">Поиск</span></button>
-      <div class="modal-window-search visually-hidden">
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <input class="search-form__input" name="search" type="search" placeholder="Что ищем?"
-                 aria-label="Поле поиска">
-        </form>
+      </nav>
+      <ul class="search-enter-cart__list">
+        <li class="search-enter-cart__item search--popup">
+          <button class="button search-enter-cart_item__search-button green--button" type="button"><span
+            class="visually-hidden">Поиск</span></button>
+          <div class="modal-window-search visually-hidden">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+              <input class="search-form__input" name="search" type="search" placeholder="Что ищем?"
+                     aria-label="Поле поиска">
+            </form>
+          </div>
+        </li>
+        <li class="search-enter-cart__item enter--popup">
+          <button class="button search-enter-cart_item__enter-button green--button" type="button">Вход</button>
+          <div class="modal-window-enter visually-hidden">
+            <form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="enter-form__first-internal-container">
+                <input class="enter-form__input" name="user-email" type="email"
+                       placeholder="Электронная почта">
+                <input class="enter-form__input" name="user-password" type="password" placeholder="Пароль">
+              </div>
+              <div class="enter-form__second-internal-container">
+                <button class="button enter-form__enter-button button--red" type="submit">Войти</button>
+                <div>
+                  <p class="modal-window-enter__text"><a class="modal-window-enter__link" href="#">Забыли пароль?</a>
+                  </p>
+                  <p class="modal-window-enter__text"><a class="modal-window-enter__link" href="#">Новая регистрация</a>
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+        <li class="search-enter-cart__item order--popup">
+          <button class="button search-enter-cart_item__cart-button green--button full--cart" type="button"
+                  aria-label="Корзина">
+            2 товара
+          </button>
+          <div class="modal-window-order visually-hidden">
+            <form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
+              <table class="cart-order__table-main" border="0">
+                <tr class="cart-order__row">
+                  <td class="cart-order__1st-col">
+                    <button class="cart-order__delete-position" type="button"
+                            aria-label="Удаление позиции в заказе"></button>
+                  </td>
+                  <td class="cart-order__2nd-col"><img class="cart-order__icecream-picture"
+                                                       src="img/isecream1_small.png" width="33px" height="33px"
+                                                       alt="Пломбир с апельсиновым джемом"></td>
+                  <td class="cart-order__3rd-col">Пломбир с апельсиновым джемом
+                    <input class="cart-form__iceream-name" type="hidden" name="icecream-name"
+                           value="Пломбир с апельсиновым джемом">
+                  </td>
+                  <td class="cart-order__4th-col">1,5 кг х 200 руб.
+                    <input class="cart-form__iceream-quantity" type="hidden" name="quantity" value="1,5 кг х 200 руб.">
+                  </td>
+                  <td class="cart-order__5th-col">300 руб.
+                    <input class="cart-form__iceream-total" type="hidden" name="total-summ" value="300 руб.">
+                  </td>
+                </tr>
+                <tr class="cart-order__row">
+                  <td class="cart-order__1st-col">
+                    <button class="cart-order__delete-position" type="button"
+                            aria-label="Удаление позиции в заказе"></button>
+                  </td>
+                  <td class="cart-order__2nd-col"><img class="cart-order__ice-picture" src="img/isecream2_small.png"
+                                                       width="33px" height="33px"
+                                                       alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                  <td class="cart-order__3rd-col">Клубничный пломбир с присыпкой из белого шоколада
+                    <input class="cart-form__iceream-name" type="hidden" name="icecream-name"
+                           value="Клубничный пломбир с присыпкой из белого шоколада">
+                  </td>
+                  <td class="cart-order__4th-col">1,5 кг х 300 руб.
+                    <input class="cart-form__iceream-quantity" type="hidden" name="quantity" value="1,5 кг х 300 руб.">
+                  </td>
+                  <td class="cart-order__5th-col">450 руб.
+                    <input class="cart-form__iceream-total" type="hidden" name="total-summ" value="450 руб.">
+                  </td>
+                </tr>
+              </table>
+              <table class="cart-order__table-total">
+                <tr class="table-total__row">
+                  <td class="table-total__cell">Итого: 750 руб.</td>
+                </tr>
+              </table>
+              <button class="button cart-order-button button--red" type="submit">Оформить заказ</button>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="main-header__second-line">
+      <ul class="second-line__breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">&raquo;</li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Каталог</a>
+        </li>
+        <li class="breadcrumbs__item">&raquo;</li>
+        <li class="breadcrumbs__item">
+          Сливочное
+        </li>
+      </ul>
+      <div class="second-line__contacts">
+        <p class="second-line__working-hours">С 10 до 20 ежедневно</p>
+        <p class="second-line__tel-text"><a class="second-line__tel"
+                                            href="tel:+78124502525">8&nbsp;812&nbsp;450-25-25</a>
+        </p>
       </div>
-    </li>
-    <li class="search-enter-cart__item visually-hidden">
-      <button class="button search-enter-cart_item__enter-button green--button" type="button">Вход</button>
-      <div class="modal-window-enter">
-        <form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
-          <input class="enter-form__mail-input" name="user-email" type="email"
-                 placeholder="Электронная почта">
-          <input class="enter-form__password-input" name="user-password" type="password" placeholder="Пароль">
-          <button class="button enter-form__enter-button green--button" type="submit">Войти</button>
-        </form>
-        <a class="modal-window-enter__link" href="#">Забыли пароль?</a>
-        <a class="modal-window-enter__link" href="#">Новая регистрация</a>
-      </div>
-    </li>
-    <li class="search-enter-cart__item">
-      <button class="button search-enter-cart_item__cart-button green--button" type="button" aria-label="Корзина">
-        Пусто
-      </button>
-      <div class="modal-window-order visually-hidden">
-        <!--Тут скорее всего накосячил. Но какого-то друго выхода не придумал, чтобы сделать работающую форму отправки. Текстареа вместо инпутов использовал потому, что в текстареа можно предсумотреть перенос текста на вторую строку, если вдруг название длиное будет. А в инпуте так не сделаешь-->
-        <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
-          <ul class="order-position__list">
-            <li class="order-position__list-item--close-button"><span class="visually-hidden">Удалить позицию</span>
-            </li>
-            <li class="order-position__list-item--img"><img class="order-position__icecream-img"
-                                                            src="img/isecream1_small.png" width="33"
-                                                            height="33" alt="Пломбир с апельсиновым джемом">
-            </li>
-            <li class="order-position__list-item&#45;&#45;name"><textarea
-              class="icecream-order-list icecream--name" name="icecream-name" cols="30"
-              rows="2" readonly>Пломбир с апельсиновым джемом</textarea></li>
-            <li class="order-position__list-item--weight"><textarea
-              class="icecream-order-list icecream--weight" name="icecream-weight"
-              cols="11" rows="2" readonly>1,5 кг</textarea></li>
-            <li class="order-position__list-item--weight">&nbsp;x&nbsp;</li>
-            <!-- TODO Спросить у Кости, правильно ли так делать разделитель-->
-            <li class="order-position__list-item--cost"><textarea class="icecream-order-list icecream--cost"
-                                                                  name="icecream-cost" cols="11"
-                                                                  rows="2" readonly>200 руб.</textarea></li>
-            <li class="order-position__list-item--price"><textarea
-              class="icecream-order-list icecream--price" name="icecream-price" cols="11"
-              rows="2" readonly>300 руб.</textarea></li>
-          </ul>
-          <ul class="order-position__list">
-            <li class="order-position__list-item--close-button"><span class="visually-hidden">Удалить позицию</span>
-            </li>
-            <li class="order-position__list-item--img"><img class="order-position__icecream-img"
-                                                            src="img/isecream2_small.png" width="33"
-                                                            height="33" alt="Пломбир с апельсиновым джемом">
-            </li>
-            <li class="order-position__list-item&#45;&#45;name"><textarea
-              class="icecream-order-list icecream--name" name="icecream-name" cols="30"
-              rows="2" readonly>Клубничный пломбир с присыпкой  из белого шоколада</textarea></li>
-            <li class="order-position__list-item--weight"><textarea
-              class="icecream-order-list icecream--weight" name="icecream-weight"
-              cols="11" rows="2" readonly>1,5 кг</textarea></li>
-            <li class="order-position__list-item--weight">&nbsp;x&nbsp;</li>
-            <!-- TODO Спросить у Кости, правильно ли так делать разделитель-->
-            <li class="order-position__list-item--cost"><textarea class="icecream-order-list icecream--cost"
-                                                                  name="icecream-cost" cols="11"
-                                                                  rows="2" readonly>300 руб.</textarea></li>
-            <li class="order-position__list-item--price"><textarea
-              class="icecream-order-list icecream--price" name="icecream-price" cols="11"
-              rows="2" readonly>450 руб.</textarea></li>
-          </ul>
-          <p class="order-form__total-text">Итого:&nbsp;</p>
-          <p class="order-form__total-price">750 руб.</p>
-          <button class="button order_form__submit-button button--red" type="submit">Оформить заказ</button>
-        </form>
-      </div>
-    </li>
-  </ul>
-  <p class="main-header__working-hours">с 10 до 20 ежедневно</p>
-  <p class="main-header__tel-text"><a class="main-header__tel" href="tel:+78124502525">8&nbsp;812&nbsp;450-25-25</a>
-  </p>
-  
-  <ul class="breadcrumbs">
-    <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
-    <li class="breadcrumbs__item"><a href="catalog.html" class="breadcrumbs__link">Каталог</a></li>
-    <li class="breadcrumbs__item">Сливочное</li>
-  </ul>
+    </div>
+  </div>
 </header>
 <main class="main">
   <section class="filter">
@@ -403,5 +429,6 @@
   <p class="footer__academy-text">Сделано в <a class="footer__academy-logo" href="https://htmlacademy.ru/">HTML
     Academy</a> &copy; 2017</p>
 </footer>
+<script src="js/modal-enter.js"></script>
 </body>
 </html>

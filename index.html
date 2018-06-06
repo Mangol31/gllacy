@@ -32,8 +32,8 @@
           <li class="main-header-nav__item"><a class="main-header-nav__link" href="#">О Компании</a></li>
         </ul>
       </nav>
-      <ul class="search-enter-cart__list">
-        <li class="search-enter-cart__item">
+      <ul class="search-enter-cart__list ">
+        <li class="search-enter-cart__item search--popup">
           <button class="button search-enter-cart_item__search-button green--button" type="button"><span
             class="visually-hidden">Поиск</span></button>
           <div class="modal-window-search visually-hidden">
@@ -44,7 +44,7 @@
           </div>
         </li>
         <li class="search-enter-cart__item enter--popup">
-          <button class="button search-enter-cart_item__enter-button green--button" type="button">Вход</button>
+          <button class="button search-enter-cart_item__enter-button" type="button">Вход</button>
           <div class="modal-window-enter visually-hidden">
             <form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="enter-form__first-internal-container">
@@ -55,27 +55,24 @@
               <div class="enter-form__second-internal-container">
                 <button class="button enter-form__enter-button button--red" type="submit">Войти</button>
                 <div>
-                  <p><a class="modal-window-enter__link" href="#">Забыли пароль?</a></p>
-                  <p><a class="modal-window-enter__link" href="#">Новая регистрация</a></p>
+                  <p class="modal-window-enter__text"><a class="modal-window-enter__link" href="#">Забыли пароль?</a></p>
+                  <p class="modal-window-enter__text"><a class="modal-window-enter__link" href="#">Новая регистрация</a></p>
                 </div>
               </div>
             </form>
           </div>
         </li>
-        <li class="search-enter-cart__item">
+        <li class="search-enter-cart__item order--popup">
           <button class="button search-enter-cart_item__cart-button green--button" type="button" aria-label="Корзина">
             Пусто
           </button>
-          <div class="modal-window-order visually-hidden">
-            <!--Тут скорее всего накосячил. Но какого-то друго выхода не придумал, чтобы сделать работающую форму отправки. Текстареа вместо инпутов использовал потому, что в текстареа можно предсумотреть перенос текста на вторую строку, если вдруг название длиное будет. А в инпуте так не сделаешь-->
-          
-          </div>
         </li>
       </ul>
     </div>
-    <div class="main-header__second-line">
-      <p class="main-header__working-hours">С 10 до 20 ежедневно</p>
-      <p class="main-header__tel-text"><a class="main-header__tel" href="tel:+78124502525">8&nbsp;812&nbsp;450-25-25</a>
+    <div class="second-line__contacts">
+      <p class="second-line__working-hours">С 10 до 20 ежедневно</p>
+      <p class="second-line__tel-text"><a class="second-line__tel"
+                                          href="tel:+78124502525">8&nbsp;812&nbsp;450-25-25</a>
       </p>
     </div>
   </div>
@@ -242,7 +239,32 @@
   <p class="footer__academy-text">Сделано в <a class="footer__academy-logo" href="https://htmlacademy.ru/">HTML
     Academy</a> &copy; 2017</p>
 </footer>
-
+<div class="modal-writeus">
+  <header class="modal-writeus__header">
+    <h2 class="modal-writeus__title">Мы обязательно вам ответим!</h2>
+    <button class="modal-writeus__close-button" type="button" aria-label="Закрыть модальное окно"></button>
+  </header>
+  <form class="modal-writeus__form" action="https://echo.htmlacademy.ru" method="post">
+    <div class="modal-writeus__form-internal-container">
+      <p class="modal-writeus__form-item">
+        <label class="modal-writeus__label" for="user-name">Ваше имя: </label>
+        <input class="modal-form__input-item" type="text" name="user-name" id="user-name" placeholder="Как вас зовут?"
+               required aria-label="Поле ввода имени">
+      </p>
+      <p class="modal-writeus__form-item">
+        <label class="modal-writeus__label" for="user-email">Ваш e-mail: </label>
+        <input class="modal-form__input-item" type="email" name="user-email" id="user-email"
+               placeholder="Ваша почта для ответа?" required aria-label="Поле ввода email">
+      </p>
+    </div>
+    <label class="modal-writeus__label" for="user-textarea">Текст письма: </label>
+    <textarea class="modal-form__text-area" name="user-letter" id="user-textarea" placeholder="Напишите что-нибудь&hellip;"
+              rows="3" cols="40" aria-label="Поле ввода текста письма"></textarea>
+    <button class="button  modal-writeus__submit-button button--red" type="submit">
+      Отправить
+    </button>
+  </form>
+</div>
 <script src="js/modal-enter.js"></script>
 </body>
 </html>
