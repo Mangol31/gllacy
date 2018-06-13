@@ -6,15 +6,17 @@
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="green-background">
 <header class="main-header green-background">
   <div class="container">
     <div class="main-header__first-line">
       <h1 class="visually-hidden">Магазин мороженого Gllacy Shop</h1>
       <nav class="main-header-nav">
-        <img class="main-header-nav__logo" src="img/Logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
+        <a class="main-nav__logo">
+          <img class="main-header-nav__logo" src="img/Logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
+        </a>
         <ul class="main-header-nav__list" aria-label="Главное меню">
-          <li class="main-header-nav__item"><a class="main-header-nav__link" href="catalog.html">Каталог</a>
+          <li class="main-header-nav__item"><a class="main-header-nav__link link--underline" href="catalog.html"><span class="link--color">Каталог</span></a>
             <ul class="main-header-sub-menu__list">
               <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Новинки</a>
               </li>
@@ -28,15 +30,15 @@
               </li>
             </ul>
           </li>
-          <li class="main-header-nav__item"><a class="main-header-nav__link" href="#">Доставка и оплата</a></li>
-          <li class="main-header-nav__item"><a class="main-header-nav__link" href="#">О Компании</a></li>
+          <li class="main-header-nav__item"><a class="main-header-nav__link link--underline" href="#"><span class="link--color">Доставка и оплата</span></a></li>
+          <li class="main-header-nav__item"><a class="main-header-nav__link link--underline" href="#"><span class="link--color">О Компании</span></a></li>
         </ul>
       </nav>
       <ul class="search-enter-cart__list ">
         <li class="search-enter-cart__item search--popup">
-          <button class="button search-enter-cart_item__search-button green--button" type="button"><span
+          <button class="button search-enter-cart_item__search-button button--green" type="button"><span
             class="visually-hidden">Поиск</span></button>
-          <div class="modal-window-search visually-hidden">
+          <div class="modal-window-search">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
               <input class="search-form__input" name="search" type="search" placeholder="Что ищем?"
                      aria-label="Поле поиска">
@@ -44,8 +46,8 @@
           </div>
         </li>
         <li class="search-enter-cart__item enter--popup">
-          <button class="button search-enter-cart_item__enter-button" type="button">Вход</button>
-          <div class="modal-window-enter visually-hidden">
+          <button class="button search-enter-cart_item__enter-button button--green" type="button">Вход</button>
+          <div class="modal-window-enter">
             <form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="enter-form__first-internal-container">
                 <input class="enter-form__input" name="user-email" type="email"
@@ -55,15 +57,17 @@
               <div class="enter-form__second-internal-container">
                 <button class="button enter-form__enter-button button--red" type="submit">Войти</button>
                 <div>
-                  <p class="modal-window-enter__text"><a class="modal-window-enter__link" href="#">Забыли пароль?</a></p>
-                  <p class="modal-window-enter__text"><a class="modal-window-enter__link" href="#">Новая регистрация</a></p>
+                  <p class="modal-window-enter__text"><a class="modal-window-enter__link" href="#">Забыли пароль?</a>
+                  </p>
+                  <p class="modal-window-enter__text"><a class="modal-window-enter__link" href="#">Новая регистрация</a>
+                  </p>
                 </div>
               </div>
             </form>
           </div>
         </li>
         <li class="search-enter-cart__item order--popup">
-          <button class="button search-enter-cart_item__cart-button green--button" type="button" aria-label="Корзина">
+          <button class="button search-enter-cart_item__cart-button button--green" type="button" aria-label="Корзина">
             Пусто
           </button>
         </li>
@@ -258,13 +262,13 @@
       </p>
     </div>
     <label class="modal-writeus__label" for="user-textarea">Текст письма: </label>
-    <textarea class="modal-form__text-area" name="user-letter" id="user-textarea" placeholder="Напишите что-нибудь&hellip;"
+    <textarea class="modal-form__text-area" name="user-letter" id="user-textarea"
+              placeholder="Напишите что-нибудь&hellip;"
               rows="3" cols="40" aria-label="Поле ввода текста письма"></textarea>
     <button class="button  modal-writeus__submit-button button--red" type="submit">
       Отправить
     </button>
   </form>
 </div>
-<script src="js/modal-enter.js"></script>
 </body>
 </html>

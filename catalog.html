@@ -5,12 +5,13 @@
   <title>Title</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<header class="main-header green-background">
+<body class="green-background">
+<header class="main-header">
   <div class="container">
     <div class="main-header__first-line">
       <h1 class="visually-hidden">Магазин мороженого Gllacy Shop</h1>
       <nav class="main-header-nav">
+        <!--TODO Не пойму откуда у рисунка появляется отступ до нижнего края контейнера main-header-nav. Этот отступ не дает полноценно отцентрировать по вертикали пункты меню-->
         <a href="index.html" class="main-nav__logo">
           <img class="main-header-nav__logo" src="img/Logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
         </a>
@@ -30,15 +31,15 @@
               </li>
             </ul>
           </li>
-          <li class="main-header-nav__item"><a class="main-header-nav__link" href="#">Доставка и оплата</a></li>
-          <li class="main-header-nav__item"><a class="main-header-nav__link" href="#">О Компании</a></li>
+          <li class="main-header-nav__item"><a class="main-header-nav__link link--underline" href="#"><span class="link--color">Доставка и оплата</span></a></li>
+          <li class="main-header-nav__item"><a class="main-header-nav__link link--underline" href="#"><span class="link--color">О Компании</span></a></li>
         </ul>
       </nav>
       <ul class="search-enter-cart__list">
         <li class="search-enter-cart__item search--popup">
-          <button class="button search-enter-cart_item__search-button green--button" type="button"><span
+          <button class="button search-enter-cart_item__search-button button--green" type="button"><span
             class="visually-hidden">Поиск</span></button>
-          <div class="modal-window-search visually-hidden">
+          <div class="modal-window-search">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
               <input class="search-form__input" name="search" type="search" placeholder="Что ищем?"
                      aria-label="Поле поиска">
@@ -46,8 +47,8 @@
           </div>
         </li>
         <li class="search-enter-cart__item enter--popup">
-          <button class="button search-enter-cart_item__enter-button green--button" type="button">Вход</button>
-          <div class="modal-window-enter visually-hidden">
+          <button class="button search-enter-cart_item__enter-button button--green" type="button">Вход</button>
+          <div class="modal-window-enter">
             <form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="enter-form__first-internal-container">
                 <input class="enter-form__input" name="user-email" type="email"
@@ -67,11 +68,11 @@
           </div>
         </li>
         <li class="search-enter-cart__item order--popup">
-          <button class="button search-enter-cart_item__cart-button green--button full--cart" type="button"
+          <button class="button search-enter-cart_item__cart-button button--green full--cart" type="button"
                   aria-label="Корзина">
             2 товара
           </button>
-          <div class="modal-window-order visually-hidden">
+          <div class="modal-window-order">
             <form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
               <table class="cart-order__table-main" border="0">
                 <tr class="cart-order__row">
@@ -123,17 +124,16 @@
           </div>
         </li>
       </ul>
+ 
     </div>
     <div class="main-header__second-line">
       <ul class="second-line__breadcrumbs">
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="index.html">Главная</a>
         </li>
-        <li class="breadcrumbs__item">&raquo;</li>
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="#">Каталог</a>
         </li>
-        <li class="breadcrumbs__item">&raquo;</li>
         <li class="breadcrumbs__item">
           Сливочное
         </li>
@@ -429,6 +429,5 @@
   <p class="footer__academy-text">Сделано в <a class="footer__academy-logo" href="https://htmlacademy.ru/">HTML
     Academy</a> &copy; 2017</p>
 </footer>
-<script src="js/modal-enter.js"></script>
 </body>
 </html>
