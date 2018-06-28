@@ -5,39 +5,37 @@
   <title>Title</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="green-background">
+<body class="body-main-settings green--background">
 <header class="main-header">
   <div class="container">
     <div class="main-header__first-line">
       <h1 class="visually-hidden">Магазин мороженого Gllacy Shop</h1>
-      <nav class="main-header-nav">
-        <!--TODO Не пойму откуда у рисунка появляется отступ до нижнего края контейнера main-header-nav. Этот отступ не дает полноценно отцентрировать по вертикали пункты меню-->
-        <a href="index.html" class="main-nav__logo">
-          <img class="main-header-nav__logo" src="img/Logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
+      <nav class="main-nav">
+        <a class="main-nav__logo">
+          <img class="main-nav__logo-img" src="img/Logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
         </a>
-        <ul class="main-header-nav__list" aria-label="Главное меню">
-          <li class="main-header-nav__item"><a class="main-header-nav__link active--page"
-                                               href="catalog.html">Каталог</a>
-            <ul class="main-header-sub-menu__list">
-              <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Новинки</a>
+        <ul class="main-nav__list" aria-label="Главное меню">
+          <li class="main-nav__list-item"><a class="main-nav__link active--page" href="catalog.html">Каталог</a>
+            <ul class="sub-menu__list">
+              <li class="sub-menu__list-item"><a class="sub-menu__link" href="#">Новинки</a>
               </li>
-              <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Сливочное</a>
+              <li class="sub-menu__list-item"><a class="sub-menu__link" href="#">Сливочное</a>
               </li>
-              <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Щербеты</a>
+              <li class="sub-menu__list-item"><a class="sub-menu__link" href="#">Щербеты</a>
               </li>
-              <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Фруктовый
+              <li class="sub-menu__list-item"><a class="sub-menu__link" href="#">Фруктовый
                 лед</a></li>
-              <li class="main-header-sub-menu__item"><a class="main-header-sub-menu__link" href="#">Мелорин</a>
+              <li class="sub-menu__list-item"><a class="sub-menu__link" href="#">Мелорин</a>
               </li>
             </ul>
           </li>
-          <li class="main-header-nav__item"><a class="main-header-nav__link link--underline" href="#"><span class="link--color">Доставка и оплата</span></a></li>
-          <li class="main-header-nav__item"><a class="main-header-nav__link link--underline" href="#"><span class="link--color">О Компании</span></a></li>
+          <li class="main-nav__list-item"><a class="main-nav__link" href="#">Доставка и оплата</a></li>
+          <li class="main-nav__list-item"><a class="main-nav__link" href="#">О Компании</a></li>
         </ul>
       </nav>
-      <ul class="search-enter-cart__list">
-        <li class="search-enter-cart__item search--popup">
-          <button class="button search-enter-cart_item__search-button button--green" type="button"><span
+      <ul class="secondary-menu__list">
+        <li class="secondary-menu__list-item search--popup">
+          <button class="button search-button button--green" type="button"><span
             class="visually-hidden">Поиск</span></button>
           <div class="modal-window-search">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -46,8 +44,8 @@
             </form>
           </div>
         </li>
-        <li class="search-enter-cart__item enter--popup">
-          <button class="button search-enter-cart_item__enter-button button--green" type="button">Вход</button>
+        <li class="secondary-menu__list-item enter--popup">
+          <button class="button secondary-menu_item__enter-button button--green" type="button">Вход</button>
           <div class="modal-window-enter">
             <form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="enter-form__first-internal-container">
@@ -56,8 +54,8 @@
                 <input class="enter-form__input" name="user-password" type="password" placeholder="Пароль">
               </div>
               <div class="enter-form__second-internal-container">
-                <button class="button enter-form__enter-button button--red" type="submit">Войти</button>
-                <div>
+                <button class="button enter-button button--red" type="submit">Войти</button>
+                <div class="enter-form__forgot-and-newentry-links">
                   <p class="modal-window-enter__text"><a class="modal-window-enter__link" href="#">Забыли пароль?</a>
                   </p>
                   <p class="modal-window-enter__text"><a class="modal-window-enter__link" href="#">Новая регистрация</a>
@@ -67,8 +65,8 @@
             </form>
           </div>
         </li>
-        <li class="search-enter-cart__item order--popup">
-          <button class="button search-enter-cart_item__cart-button button--green full--cart" type="button"
+        <li class="secondary-menu__list-item order--popup">
+          <button class="button cart-button button--green full--cart" type="button"
                   aria-label="Корзина">
             2 товара
           </button>
@@ -124,7 +122,7 @@
           </div>
         </li>
       </ul>
- 
+    
     </div>
     <div class="main-header__second-line">
       <ul class="second-line__breadcrumbs">
