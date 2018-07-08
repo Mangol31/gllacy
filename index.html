@@ -81,25 +81,34 @@
     </div>
   </div>
 </header>
-<section class="slider">
+<section class="carousel container">
   <h2 class="visually-hidden">Слайдер</h2>
-  <div class="slider__controls">
-    <i class="slider__controls-button button--active"></i>
-    <i class="slider__controls-button"></i>
-    <i class="slider__controls-button"></i>
-  </div>
-  <ul class="slider-list">
-    <li class="slider-list__item slider-list__item--first-slide">
-      <h3 class="slider-slogan slider-slogan--first-slide">Крем-брюле и пломбир с малиновым джемом</h3>
-      <a class="button slider--button button--red" href="#">Давайте оба!</a>
+  <ul class="carousel__controls">
+    <li class="carousel__controls-button button--active"><label class="carousel__controls-label"><span
+      class="visually-hidden">Первый слайд</span></label></li>
+    <li class="carousel__controls-button"><label class="carousel__controls-label"><span class="visually-hidden">Второй слайд</span></label>
     </li>
-    <li class="slider-list__item slider-list__item--second-slide">
-      <h3 class="slider-slogan slider-slogan--second-slide">Шоколадный пломбир и лимонный сорбет</h3>
-      <a class="button slider--button button--red" href="#">Давайте оба!</a>
+    <li class="carousel__controls-button"><label class="carousel__controls-label"><span class="visually-hidden">Третий слайд</span></label>
     </li>
-    <li class="slider-list__item slider-list__item--third-slide">
-      <h3 class="slider-slogan slider-slogan--third-slide">Пломбир с помадкой и клубничный щербет</h3>
-      <a class="button slider--button button--red" href="#">Давайте оба!</a>
+  </ul>
+  <ul class="carousel__slider-list">
+    <li class="slider-list__item">
+      <img class="slider-list__img" src="img/ice_cream_1sld.png" alt="Крем-брюле и пломбир с малиновым джемом"
+           width="1050" height="900">
+      <h3 class="slider-list__slogan">Крем-брюле и пломбир с&nbsp;малиновым джемом</h3>
+      <a class="button slider__button button--red" href="#">Давайте оба!</a>
+    </li>
+    <li class="slider-list__item">
+      <img class="slider-list__img" src="img/ice_cream_2sld.png" alt="Шоколадный пломбир и лимонный сорбет" width="1050"
+           height="900">
+      <h3 class="slider-list__slogan">Шоколадный пломбир и&nbsp;лимонный сорбет</h3>
+      <a class="button slider__button button--red" href="#">Давайте оба!</a>
+    </li>
+    <li class="slider-list__item  visible--item">
+      <img class="slider-list__img" src="img/ice_cream_3sld.png" alt="Пломбир с помадкой и клубничный щербет"
+           width="1050" height="900">
+      <h3 class="slider-list__slogan">Пломбир с помадкой и&nbsp;клубничный щербет</h3>
+      <a class="button slider__button button--red" href="#">Давайте оба!</a>
     </li>
   </ul>
 </section>
