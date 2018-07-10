@@ -84,29 +84,29 @@
 <section class="carousel container">
   <h2 class="visually-hidden">Слайдер</h2>
   <ul class="carousel__controls">
-    <li class="carousel__controls-button button--active"><label class="carousel__controls-label"><span
+    <li class="carousel__controls-button button--active js-button"><label class="carousel__controls-label"><span
       class="visually-hidden">Первый слайд</span></label></li>
-    <li class="carousel__controls-button"><label class="carousel__controls-label"><span class="visually-hidden">Второй слайд</span></label>
+    <li class="carousel__controls-button js-button"><label class="carousel__controls-label"><span class="visually-hidden">Второй слайд</span></label>
     </li>
-    <li class="carousel__controls-button"><label class="carousel__controls-label"><span class="visually-hidden">Третий слайд</span></label>
+    <li class="carousel__controls-button js-button"><label class="carousel__controls-label"><span class="visually-hidden">Третий слайд</span></label>
     </li>
   </ul>
   <ul class="carousel__slider-list">
-    <li class="slider-list__item">
+    <li class="carousel__slider-item js-carousel__slider-item">
       <img class="slider-list__img" src="img/ice_cream_1sld.png" alt="Крем-брюле и пломбир с малиновым джемом"
-           width="1050" height="900">
+           width="647" height="584">
       <h3 class="slider-list__slogan">Крем-брюле и пломбир с&nbsp;малиновым джемом</h3>
       <a class="button slider__button button--red" href="#">Давайте оба!</a>
     </li>
-    <li class="slider-list__item">
-      <img class="slider-list__img" src="img/ice_cream_2sld.png" alt="Шоколадный пломбир и лимонный сорбет" width="1050"
-           height="900">
+    <li class="carousel__slider-item js-carousel__slider-item">
+      <img class="slider-list__img" src="img/ice_cream_2sld.png" alt="Шоколадный пломбир и лимонный сорбет" width="644"
+           height="582">
       <h3 class="slider-list__slogan">Шоколадный пломбир и&nbsp;лимонный сорбет</h3>
       <a class="button slider__button button--red" href="#">Давайте оба!</a>
     </li>
-    <li class="slider-list__item  visible--item">
+    <li class="carousel__slider-item js-carousel__slider-item  visible--item">
       <img class="slider-list__img" src="img/ice_cream_3sld.png" alt="Пломбир с помадкой и клубничный щербет"
-           width="1050" height="900">
+           width="639" height="582">
       <h3 class="slider-list__slogan">Пломбир с помадкой и&nbsp;клубничный щербет</h3>
       <a class="button slider__button button--red" href="#">Давайте оба!</a>
     </li>
@@ -114,15 +114,15 @@
 </section>
 
 <main>
-  <section class="bonuses">
+  <section class="bonuses container">
     <h2 class="visually-hidden">Дополнительные бонусы</h2>
-    <div class="bonuses__left-part">
+    <div class="bonuses__half-part lpart--background">
       <h3 class="bonuses__title">Малинка даром!</h3>
       <p class="bonuses__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового
         варенья бесплатно.</p>
       <a class="button bonuses-button button--red" href="#">Хочу варенье!</a>
     </div>
-    <div class="bonuses__right-part">
+    <div class="bonuses__half-part rpart--background">
       <h3 class="bonuses__title">Шоколадки даром!</h3>
       <p class="bonuses__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
         присыпки
@@ -279,5 +279,6 @@
     </button>
   </form>
 </div>
+<script src="js/carousel.js"></script>
 </body>
 </html>
