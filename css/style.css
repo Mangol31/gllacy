@@ -933,15 +933,25 @@ input[type='radio'].visually-hidden
 {
     position: relative;
 
-    min-height: 500px;;
+    min-height: 500px;
 }
 
 .carousel__slider-list
 {
     margin-bottom: 30px;
 }
-
-.carouse__slider-item
+.carousel__slider-list:after {
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    top: -140%;
+    left: -35%;
+    content: '';
+    background: radial-gradient(500px, rgba(255,255,255, 0.9), rgba(132,157,143, 1));
+    z-index: -2;
+    /*background-color: red;*/
+}
+.carousel__slider-item
 {
     position: relative;
 
@@ -957,11 +967,22 @@ input[type='radio'].visually-hidden
 .visible--item
 {
     display: flex;
+    position: relative;
+
 }
+/*.carousel__slider-item:after {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+
+    /*content: '';*/
+
+    /*background: radial-gradient(circle, #FFF,#000);*/
+
+/*}*/
 
 
-
-.slider-list__img
+.carousel__slider-img
 {
     position: absolute;
     z-index: -1;
@@ -972,7 +993,8 @@ input[type='radio'].visually-hidden
     height: auto;
 }
 
-.slider-list__slogan
+
+.carousel__slider-slogan
 {
     font-size: 60px;
     font-weight: 700;
