@@ -6,9 +6,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body-main-settings green--background">
-<header class="main-header">
+<header class="main-header green--background">
   <div class="container">
-    <div class="main-header__first-line">
+    <div class="main-header__first-line main--padding">
       <h1 class="visually-hidden">Магазин мороженого Gllacy Shop</h1>
       <nav class="main-nav">
         <a class="main-nav__logo">
@@ -124,7 +124,7 @@
       </ul>
     
     </div>
-    <div class="main-header__second-line">
+    <div class="main-header__second-line main--padding">
       <ul class="second-line__breadcrumbs">
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="index.html">Главная</a>
@@ -145,21 +145,22 @@
     </div>
   </div>
 </header>
-<main class="main">
-  <section class="filter">
-    <h2 class="visualy-hidden">Фильтр выбора товаров</h2>
+<main class="main container">
+  <section class="filter main--padding">
+    <h2 class="filter-title">Сливочное мороженое</h2>
     <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="filter-form__sort">
-        <legend class="filter-form__sort-label" aria-label="Выбор способа сортировки">Сортировка:
+        <legend class="filter-form__legend" aria-label="Выбор способа сортировки">Сортировка:
           <select name="sort-select" class="filter-form__select">
-            <option value="by-popularuty" class="sort-select__option">По популярности</option>
-            <option value="by-price__ascending" class="sort-select__option">По цене.По возрастанию</option>
-            <option value="by-price__decending" class="sort-select__option">По цене. По убыванию</option>
+            <option value="by-popularuty" class="sort-select__option">по популярности</option>
+            <option value="by-price__lowcost" class="sort-select__option">сначала недорогие</option>
+            <option value="by-price__decending" class="sort-select__option">сначала дорогие</option>
+            <option value="by-faness" class="sort-select__option">по жирности</option>
           </select>
         </legend>
       </fieldset>
       <fieldset class="filter-form__range">
-        <legend class="filter-form__range-legend" aria-label="Выбор диапазона цен">Цена: 100 руб. – 500 руб."
+        <legend class="filter-form__legend" aria-label="Выбор диапазона цен">Цена: 100 руб. – 500 руб.
         </legend>
         <div class="filter-form__range">
           <div class="filter-form__range-controls">
@@ -173,7 +174,7 @@
       
       </fieldset>
       <fieldset class="filter-form__fantess">
-        <legend class="filter-form__fatness-legend">Жирность:</legend>
+        <legend class="filter-form__legend">Жирность:</legend>
         <ul class="filter-form__fatness-list">
           <li class="filter-form__fatness-item">
             <input class="filter-form__fatness-radiobutton visually-hidden" type="radio" name="fatness"
@@ -187,67 +188,67 @@
                    value="10"
                    id="ten-percent"
                    aria-label="10%" checked>
-            <label class="filter-form__fatness-label" for="ten-percent">10%</label>
+            <label class="filter-form__fatness-label" for="ten-percent">до 10%</label>
           </li>
           <li class="filter-form__fatness-item">
             <input class="filter-form__fatness-radiobutton visually-hidden" type="radio" name="fatness"
                    value="30"
                    id="thirty-percent"
                    aria-label="30%">
-            <label class="filter-form__grid-label" for="thirty-percent">30%</label>
+            <label class="filter-form__fatness-label" for="thirty-percent">до 30%</label>
           </li>
           <li class="filter-form__fatness-item">
             <input class="filter-form__fatness-radiobutton visually-hidden" type="radio" name="fatness"
                    value="over 30"
                    id="over-thirty-percent"
                    aria-label="больше 30%">
-            <label class="filter-form__grid-label" for="over-thirty-percent">больше 30%</label>
+            <label class="filter-form__fatness-label" for="over-thirty-percent">выше 30%</label>
           </li>
         </ul>
       </fieldset>
       <fieldset class="filter-form__additive">
-        <legend class="filter-form__features-legend">Наполнители:</legend>
+        <legend class="filter-form__legend">Наполнители:</legend>
         <ul class="filter-form__additive-list">
           <li class="filter-form__additive-item">
             <input class="filter-form__additive-checkbox visually-hidden" type="checkbox" name="chocolate"
                    id="chocolate" checked
                    aria-label="Шоколадные">
-            <label class="filter-form__features-label" for="chocolate">Шоколадные</label>
+            <label class="filter-form__features-label" for="chocolate">шоколадные</label>
           </li>
           <li class="filter-form__additive-item">
             <input class="filter-form__additive-checkbox visually-hidden" type="checkbox"
                    name="sugar-powder"
                    id="sugar-powder" checked
                    aria-label="Сахарные присыпки">
-            <label class="filter-form__features-label" for="sugar-powder">Сахарные присыпки</label>
+            <label class="filter-form__features-label" for="sugar-powder">сахарные присыпки</label>
           </li>
           <li class="filter-form__additive-item">
             <input class="filter-form__additive-checkbox visually-hidden" type="checkbox" name="fruits"
                    id="fruits"
                    aria-label="Фрукты">
-            <label class="filter-form__features-label" for="fruits">Фрукты</label>
+            <label class="filter-form__features-label" for="fruits">фрукты</label>
           </li>
           <li class="filter-form__additive-item">
             <input class="filter-form__additive-checkbox visually-hidden" type="checkbox" name="syrup"
                    id="syrup"
                    aria-label="Сиропы">
-            <label class="filter-form__features-label" for="syrup">Сиропы</label>
+            <label class="filter-form__features-label" for="syrup">сиропы</label>
           </li>
           <li class="filter-form__additive-item">
             <input class="filter-form__additive-checkbox visually-hidden" type="checkbox" name="jam"
                    id="jam"
                    aria-label="Джемы">
-            <label class="filter-form__features-label" for="jam">Джемы</label>
+            <label class="filter-form__features-label" for="jam">джемы</label>
           </li>
         </ul>
       </fieldset>
       <button class="button filter-form__button button--grey" type="submit">Применить</button>
     </form>
   </section>
-  <section class="catalog">
+  <section class="catalog main--padding">
     <h2 class="visually-hidden">Каталог мороженого</h2>
     <ul class="catalog__list">
-      <li class="catalog__list-item">
+      <li class="catalog__list-item bottom--indent">
         <article class="product-card">
           <h3 class="visually-hidden">Сливочное с апельсиновым джемом и цитрусовой
             стружкой</h3>
@@ -256,10 +257,12 @@
           <b class="product-card__icecream-price">310&nbsp;&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-          <a class="button catalog--button button--red visually-hidden" href="#">Быстрый просмотр</a>
+          <div class="product-card__active">
+            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+          </div>
         </article>
       </li>
-      <li class="catalog__list-item">
+      <li class="catalog__list-item bottom--indent">
         <article class="product-card">
           <h3 class="visually-hidden">Сливочно-кофейное с кусочками шоколада</h3>
           <img class="product-card__img" src="img/ice-cream__cream-w-coffee.png" width="267" height="267"
@@ -267,10 +270,12 @@
           <b class="product-card__icecream-price">380&nbsp;&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
-          <a class="button catalog--button button--red visually-hidden" href="#">Быстрый просмотр</a>
+          <div class="product-card__active">
+            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+          </div>
         </article>
       </li>
-      <li class="catalog__list-item">
+      <li class="catalog__list-item bottom--indent">
         <article class="product-card">
           <h3 class="visually-hidden">Сливочно-клубничное с присыпкой из белого
             шоколада</h3>
@@ -280,10 +285,12 @@
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочно-клубничное с присыпкой из белого
             шоколада</a>
-          <a class="button catalog--button button--red visually-hidden" href="#">Быстрый просмотр</a>
+          <div class="product-card__active">
+            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+          </div>
         </article>
       </li>
-      <li class="catalog__list-item">
+      <li class="catalog__list-item bottom--indent">
         <article class="product-card">
           <h3 class="visually-hidden">Сливочное крем-брюле с карамельной подливкой</h3>
           <img class="product-card__img" src="img/ice-cream__сreme-brulee.png" width="267" height="267"
@@ -291,10 +298,13 @@
           <b class="product-card__icecream-price">415&nbsp;&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
-          <a class="button catalog--button button--red visually-hidden" href="#">Быстрый просмотр</a>
+          <div class="product-card__active">
+            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+          </div>
+          </div>
         </article>
       </li>
-      <li class="catalog__list-item">
+      <li class="catalog__list-item bottom--indent">
         <article class="product-card">
           <h3 class="visually-hidden">Сливочное с брусничным джемом</h3>
           <img class="product-card__img" src="img/ice-cream__cream-w-cowberry.png" width="267" height="267"
@@ -302,10 +312,14 @@
           <b class="product-card__icecream-price">325&nbsp;&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочное с брусничным джемом</a>
-          <a class="button catalog--button button--red visually-hidden" href="#">Быстрый просмотр</a>
+          <div class="product-card__active">
+            <div class="product-card__active">
+              <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+            </div>
+          </div>
         </article>
       </li>
-      <li class="catalog__list-item">
+      <li class="catalog__list-item bottom--indent">
         <article class="product-card">
           <h3 class="visually-hidden">Сливочно-черничное с цельными ягодами черники
           </h3>
@@ -314,10 +328,12 @@
           <b class="product-card__icecream-price">410&nbsp;&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочно-черничное с цельными ягодами черники</a>
-          <a class="button catalog--button button--red visually-hidden" href="#">Быстрый просмотр</a>
+          <div class="product-card__active">
+            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+          </div>
         </article>
       </li>
-      <li class="catalog__list-item">
+      <li class="catalog__list-item bottom--indent">
         <article class="product-card">
           <h3 class="visually-hidden">Сливочно-лимонное с карамельной присыпкой</h3>
           <img class="product-card__img" src="img/ice-cream__сreme-lemon.png" width="267" height="267"
@@ -325,10 +341,12 @@
           <b class="product-card__icecream-price">375&nbsp;&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочно-лимонное с карамельной присыпкой</a>
-          <a class="button catalog--button button--red visually-hidden" href="#">Быстрый просмотр</a>
+          <div class="product-card__active">
+            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+          </div>
         </article>
       </li>
-      <li class="catalog__list-item">
+      <li class="catalog__list-item bottom--indent">
         <article class="product-card">
           <h3 class="visually-hidden">Сливочное с шоколадной стружкой</h3>
           <img class="product-card__img" src="img/ice-cream__сreme-chocolate-chip.png" width="267"
@@ -337,10 +355,12 @@
           <b class="product-card__icecream-price">320&nbsp;&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочное с шоколадной стружкой</a>
-          <a class="button catalog--button button--red visually-hidden" href="#">Быстрый просмотр</a>
+          <div class="product-card__active">
+            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+          </div>
         </article>
       </li>
-      <li class="catalog__list-item">
+      <li class="catalog__list-item bottom--indent">
         <article class="product-card">
           <h3 class="visually-hidden">Сливочно-ванильное с кусочками шоколада</h3>
           <img class="product-card__img" src="img/ice-cream__сreme-vanilla-chocolate.png" width="267"
@@ -349,10 +369,12 @@
           <b class="product-card__icecream-price">440&nbsp;&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочно-ванильное с кусочками шоколада</a>
-          <a class="button catalog--button button--red visually-hidden" href="#">Быстрый просмотр</a>
+          <div class="product-card__active">
+            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+          </div>
         </article>
       </li>
-      <li class="catalog__list-item">
+      <li class="catalog__list-item bottom--indent">
         <article class="product-card">
           <h3 class="visually-hidden">Сливочноe с ментоловым сиропом</h3>
           <img class="product-card__img" src="img/ice-cream__сreme-mentol.png" width="267" height="267"
@@ -360,10 +382,12 @@
           <b class="product-card__icecream-price">435&nbsp;&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочноe с ментоловым сиропом</a>
-          <a class="button catalog--button button--red visually-hidden" href="#">Быстрый просмотр</a>
+          <div class="product-card__active">
+            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+          </div>
         </article>
       </li>
-      <li class="catalog__list-item">
+      <li class="catalog__list-item bottom--indent">
         <article class="product-card">
           <h3 class="visually-hidden">Сливочное с кусочками черного шоколада</h3>
           <img class="product-card__img" src="img/ice-cream__black-chocolate.png" width="267" height="267"
@@ -371,10 +395,12 @@
           <b class="product-card__icecream-price">355&nbsp;&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочное с кусочками черного шоколада</a>
-          <a class="button catalog--button button--red visually-hidden" href="#">Быстрый просмотр</a>
+          <div class="product-card__active">
+            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+          </div>
         </article>
       </li>
-      <li class="catalog__list-item">
+      <li class="catalog__list-item bottom--indent">
         <article class="product-card">
           <h3 class="visually-hidden">Сливочное с мятным сиропом</h3>
           <img class="product-card__img" src="img/ice-cream__mint.png" width="267" height="267"
@@ -382,49 +408,62 @@
           <b class="product-card__icecream-price">420&nbsp;&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочное с мятным сиропом</a>
-          <a class="button catalog--button button--red visually-hidden" href="#">Быстрый просмотр</a>
+          <div class="product-card__active">
+            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+          </div>
         </article>
       </li>
     </ul>
-    <ul class="breadcrumbs__list">
-      <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link"><span class="visual-hidden">Предыдущая</span></a>
+    <ul class="paginator__list  top--border">
+      <li class="paginator__item"><a href="#" class="paginator__link bottom--markers previous--page"
+                                     aria-label="Предыдущая страница"></a>
       </li>
-      <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">1</a></li>
-      <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">2</a></li>
-      <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">3</a></li>
-      <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">4</a></li>
-      <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">5</a></li>
-      <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link"><span
-        class="visual-hidden">Следующая</span></a></li>
+      <li class="paginator__item"><a href="#" class="paginator__link bottom--markers">1</a></li>
+      <li class="paginator__item"><a href="#" class="paginator__link bottom--markers">2</a></li>
+      <li class="paginator__item"><a href="#" class="paginator__link bottom--markers">3</a></li>
+      <li class="paginator__item"><a href="#" class="paginator__link bottom--markers">4</a></li>
+      <li class="paginator__item"><a href="#" class="paginator__link bottom--markers">5</a></li>
+      <li class="paginator__item"><a href="#" class="paginator__link bottom--markers next--page"
+                                     aria-label="Следующая страница"></a></li>
     </ul>
   </section>
 </main>
-<footer class="footer">
-  <ul class="footer__social-list">
-    <li class="footer__social-list-item">
-      <a class="footer__social-button footer__social-button--twitter" href="#"><span
-        class="visually-hidden">Twitter</span></a>
-    </li>
-    <li class="footer__social-list-item">
-      <a class="footer__social-button footer__social-button--insta" href="#"><span
-        class="visually-hidden">Instagram</span></a>
-    </li>
-    <li class="footer__social-list-item">
-      <a class="footer__social-button footer__social-button--fb" href="#"><span class="visually-hidden">Facebook</span></a>
-    </li>
-    <li class="footer__social-list-item">
-      <a class="footer__social-button footer__social-button--vk" href="#"><span class="visually-hidden">ВКонтакте</span></a>
-    </li>
-  </ul>
-  <ul class="footer__info-list">
-    <li class="footer__info-list-item"><a class="info-list__link attention--link" href="#">Для поставщиков</a></li>
-    <li class="footer__info-list-item"><a class="info-list__link" href="#">О производстве</a></li>
-    <li class="footer__info-list-item"><a class="info-list__link" href="#">Наши документы</a></li>
-    <li class="footer__info-list-item"><a class="info-list__link" href="#">Экологические стандарты</a></li>
-  </ul>
-  <img class="footer__academy-logo" src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="HTML Academy">
-  <p class="footer__academy-text">Сделано в <a class="footer__academy-logo" href="https://htmlacademy.ru/">HTML
-    Academy</a> &copy; 2017</p>
+<footer class="footer container main--padding ">
+  <div class="footer__left-part">
+    <ul class="footer__social-list">
+      <li class="footer__social-list-item">
+        <a class="footer__social-button social-button--twitter" href="#"><span
+          class="visually-hidden">Twitter</span></a>
+      </li>
+      <li class="footer__social-list-item">
+        <a class="footer__social-button social-button--insta" href="#"><span
+          class="visually-hidden">Instagram</span></a>
+      </li>
+      <li class="footer__social-list-item">
+        <a class="footer__social-button social-button--fb" href="#"><span
+          class="visually-hidden">Facebook</span></a>
+      </li>
+      <li class="footer__social-list-item">
+        <a class="footer__social-button social-button--vk" href="#"><span
+          class="visually-hidden">ВКонтакте</span></a>
+      </li>
+    </ul>
+    <ul class="footer__info-list">
+      <li class="footer__info-list-item"><a class="footer__info-list-link active--link margin--left" href="#">Для
+        поставщиков</a>
+      </li>
+      
+      <li class="footer__info-list-item"><a class="footer__info-list-link" href="#">Наши документы</a></li>
+      <li class="footer__info-list-item"><a class="footer__info-list-link margin--left" href="#">О производстве</a></li>
+      <li class="footer__info-list-item"><a class="footer__info-list-link" href="#">Экологические стандарты</a></li>
+    </ul>
+  </div>
+  
+  <div class="footer__right-part">
+    <img class="footer__academy-logo" src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="HTML Academy">
+    <p class="footer__academy-text">Сделано в <a class="footer__academy-link" href="https://htmlacademy.ru/">HTML
+      Academy</a> &copy; 2017</p>
+  </div>
 </footer>
 </body>
 </html>
