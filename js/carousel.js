@@ -1,4 +1,3 @@
-//debugger;
 var items = document.querySelectorAll('.js-carousel__slider-item');
 var dots = document.querySelectorAll('.js-button');
 var arrayItems = [].slice.call(items, 0);

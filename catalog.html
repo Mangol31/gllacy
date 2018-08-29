@@ -70,54 +70,54 @@
                   aria-label="Корзина">
             2 товара
           </button>
-          <div class="modal-window-order">
-            <form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
-              <table class="cart-order__table-main" border="0">
-                <tr class="cart-order__row">
-                  <td class="cart-order__1st-col">
-                    <button class="cart-order__delete-position" type="button"
+          <div class="modal-window__order">
+            <form class="modal-window__order-table" action="https://echo.htmlacademy.ru" method="post">
+              <table class="order-table__main" border="0">
+                <tr class="order-table__row">
+                  <td class="order-table__1st-col">
+                    <button class="order-table__delete-position" type="button"
                             aria-label="Удаление позиции в заказе"></button>
                   </td>
-                  <td class="cart-order__2nd-col"><img class="cart-order__icecream-picture"
+                  <td class="order-table__2nd-col"><img class="order-table__icecream-picture"
                                                        src="img/isecream1_small.png" width="33px" height="33px"
                                                        alt="Пломбир с апельсиновым джемом"></td>
-                  <td class="cart-order__3rd-col">Пломбир с апельсиновым джемом
-                    <input class="cart-form__iceream-name" type="hidden" name="icecream-name"
+                  <td class="order-table__3rd-col">Пломбир с апельсиновым джемом
+                    <input class="order-table__iceream-name" type="hidden" name="icecream-name"
                            value="Пломбир с апельсиновым джемом">
                   </td>
-                  <td class="cart-order__4th-col">1,5 кг х 200 руб.
-                    <input class="cart-form__iceream-quantity" type="hidden" name="quantity" value="1,5 кг х 200 руб.">
+                  <td class="order-table__4th-col">1,5 кг х 200 руб.
+                    <input class="order-table__iceream-quantity" type="hidden" name="quantity" value="1,5 кг х 200 руб.">
                   </td>
-                  <td class="cart-order__5th-col">300 руб.
-                    <input class="cart-form__iceream-total" type="hidden" name="total-summ" value="300 руб.">
+                  <td class="order-table__5th-col">300 руб.
+                    <input class="order-table__iceream-total" type="hidden" name="total-summ" value="300 руб.">
                   </td>
                 </tr>
-                <tr class="cart-order__row">
-                  <td class="cart-order__1st-col">
-                    <button class="cart-order__delete-position" type="button"
+                <tr class="order-table__row">
+                  <td class="order-table__1st-col">
+                    <button class="order-table__delete-position" type="button"
                             aria-label="Удаление позиции в заказе"></button>
                   </td>
-                  <td class="cart-order__2nd-col"><img class="cart-order__ice-picture" src="img/isecream2_small.png"
+                  <td class="order-table__2nd-col"><img class="order-table__icecream-picture" src="img/isecream2_small.png"
                                                        width="33px" height="33px"
                                                        alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                  <td class="cart-order__3rd-col">Клубничный пломбир с присыпкой из белого шоколада
+                  <td class="order-table__3rd-col">Клубничный пломбир с присыпкой из белого шоколада
                     <input class="cart-form__iceream-name" type="hidden" name="icecream-name"
                            value="Клубничный пломбир с присыпкой из белого шоколада">
                   </td>
-                  <td class="cart-order__4th-col">1,5 кг х 300 руб.
+                  <td class="order-table__4th-col">1,5 кг х 300 руб.
                     <input class="cart-form__iceream-quantity" type="hidden" name="quantity" value="1,5 кг х 300 руб.">
                   </td>
-                  <td class="cart-order__5th-col">450 руб.
+                  <td class="order-table__5th-col">450 руб.
                     <input class="cart-form__iceream-total" type="hidden" name="total-summ" value="450 руб.">
                   </td>
                 </tr>
               </table>
-              <table class="cart-order__table-total">
+              <table class="order-table__table-total">
                 <tr class="table-total__row">
                   <td class="table-total__cell">Итого: 750 руб.</td>
                 </tr>
               </table>
-              <button class="button cart-order-button button--red" type="submit">Оформить заказ</button>
+              <button class="button order-table-button button--red" type="submit">Оформить заказ</button>
             </form>
           </div>
         </li>
@@ -126,13 +126,13 @@
     </div>
     <div class="main-header__second-line main--padding">
       <ul class="second-line__breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="index.html">Главная</a>
+        <li class="second-line__breadcrumbs-item">
+          <a class="second-line__breadcrumbs-link" href="index.html">Главная</a>
         </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="#">Каталог</a>
+        <li class="second-line__breadcrumbs-item">
+          <a class="second-line__breadcrumbs-link" href="#">Каталог</a>
         </li>
-        <li class="breadcrumbs__item">
+        <li class="second-line__breadcrumbs-item">
           Сливочное
         </li>
       </ul>
@@ -152,10 +152,10 @@
       <fieldset class="filter-form__sort">
         <legend class="filter-form__legend" aria-label="Выбор способа сортировки">Сортировка:
           <select name="sort-select" class="filter-form__select">
-            <option value="by-popularuty" class="sort-select__option">по популярности</option>
-            <option value="by-price__lowcost" class="sort-select__option">сначала недорогие</option>
-            <option value="by-price__decending" class="sort-select__option">сначала дорогие</option>
-            <option value="by-faness" class="sort-select__option">по жирности</option>
+            <option value="by-popularuty" class="filter-form__select-option">по популярности</option>
+            <option value="by-price__lowcost" class="filter-form__select-option">сначала недорогие</option>
+            <option value="by-price__decending" class="filter-form__select-option">сначала дорогие</option>
+            <option value="by-faness" class="filter-form__select-option">по жирности</option>
           </select>
         </legend>
       </fieldset>
@@ -254,7 +254,7 @@
             стружкой</h3>
           <img class="product-card__img" src="img/ice-cream__cream-w-orange.png" width="267" height="267"
                alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          <b class="product-card__icecream-price">310&nbsp;&#8381;<span
+          <b class="product-card__icecream-price">310&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           <div class="product-card__active">
@@ -267,11 +267,11 @@
           <h3 class="visually-hidden">Сливочно-кофейное с кусочками шоколада</h3>
           <img class="product-card__img" src="img/ice-cream__cream-w-coffee.png" width="267" height="267"
                alt="Сливочно-кофейное с кусочками шоколада">
-          <b class="product-card__icecream-price">380&nbsp;&#8381;<span
+          <b class="product-card__icecream-price">380&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
           <div class="product-card__active">
-            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+            <a class="button product-card__button button--red" href="#">Быстрый просмотр</a>
           </div>
         </article>
       </li>
@@ -281,12 +281,12 @@
             шоколада</h3>
           <img class="product-card__img" src="img/ice-cream__cream-w-strawberry.png" width="267" height="267"
                alt="Сливочно-клубничное с присыпкой из белого шоколада">
-          <b class="product-card__icecream-price">355&nbsp;&#8381;<span
+          <b class="product-card__icecream-price">355&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочно-клубничное с присыпкой из белого
             шоколада</a>
           <div class="product-card__active">
-            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+            <a class="button product-card__button button--red" href="#">Быстрый просмотр</a>
           </div>
         </article>
       </li>
@@ -295,11 +295,11 @@
           <h3 class="visually-hidden">Сливочное крем-брюле с карамельной подливкой</h3>
           <img class="product-card__img" src="img/ice-cream__сreme-brulee.png" width="267" height="267"
                alt="Сливочное крем-брюле с карамельной подливкой">
-          <b class="product-card__icecream-price">415&nbsp;&#8381;<span
+          <b class="product-card__icecream-price">415&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
           <div class="product-card__active">
-            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+            <a class="button product-card__button button--red" href="#">Быстрый просмотр</a>
           </div>
           </div>
         </article>
@@ -309,12 +309,12 @@
           <h3 class="visually-hidden">Сливочное с брусничным джемом</h3>
           <img class="product-card__img" src="img/ice-cream__cream-w-cowberry.png" width="267" height="267"
                alt="Сливочное с брусничным джемом">
-          <b class="product-card__icecream-price">325&nbsp;&#8381;<span
+          <b class="product-card__icecream-price">325&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочное с брусничным джемом</a>
           <div class="product-card__active">
             <div class="product-card__active">
-              <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+              <a class="button product-card__button button--red" href="#">Быстрый просмотр</a>
             </div>
           </div>
         </article>
@@ -325,11 +325,11 @@
           </h3>
           <img class="product-card__img" src="img/ice-cream__сreme-blueberry.png" width="267" height="267"
                alt="Сливочно-черничное с цельными ягодами черники">
-          <b class="product-card__icecream-price">410&nbsp;&#8381;<span
+          <b class="product-card__icecream-price">410&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочно-черничное с цельными ягодами черники</a>
           <div class="product-card__active">
-            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+            <a class="button product-card__button button--red" href="#">Быстрый просмотр</a>
           </div>
         </article>
       </li>
@@ -338,11 +338,11 @@
           <h3 class="visually-hidden">Сливочно-лимонное с карамельной присыпкой</h3>
           <img class="product-card__img" src="img/ice-cream__сreme-lemon.png" width="267" height="267"
                alt="Сливочно-лимонное с карамельной присыпкой">
-          <b class="product-card__icecream-price">375&nbsp;&#8381;<span
+          <b class="product-card__icecream-price">375&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочно-лимонное с карамельной присыпкой</a>
           <div class="product-card__active">
-            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+            <a class="button product-card__button button--red" href="#">Быстрый просмотр</a>
           </div>
         </article>
       </li>
@@ -352,11 +352,11 @@
           <img class="product-card__img" src="img/ice-cream__сreme-chocolate-chip.png" width="267"
                height="267"
                alt="Сливочное с шоколадной стружкой">
-          <b class="product-card__icecream-price">320&nbsp;&#8381;<span
+          <b class="product-card__icecream-price">320&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочное с шоколадной стружкой</a>
           <div class="product-card__active">
-            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+            <a class="button product-card__button button--red" href="#">Быстрый просмотр</a>
           </div>
         </article>
       </li>
@@ -366,11 +366,11 @@
           <img class="product-card__img" src="img/ice-cream__сreme-vanilla-chocolate.png" width="267"
                height="267"
                alt="Сливочно-ванильное с кусочками шоколада">
-          <b class="product-card__icecream-price">440&nbsp;&#8381;<span
+          <b class="product-card__icecream-price">440&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочно-ванильное с кусочками шоколада</a>
           <div class="product-card__active">
-            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+            <a class="button product-card__button button--red" href="#">Быстрый просмотр</a>
           </div>
         </article>
       </li>
@@ -379,11 +379,11 @@
           <h3 class="visually-hidden">Сливочноe с ментоловым сиропом</h3>
           <img class="product-card__img" src="img/ice-cream__сreme-mentol.png" width="267" height="267"
                alt="Сливочноe с ментоловым сиропом">
-          <b class="product-card__icecream-price">435&nbsp;&#8381;<span
+          <b class="product-card__icecream-price">435&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочноe с ментоловым сиропом</a>
           <div class="product-card__active">
-            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+            <a class="button product-card__button button--red" href="#">Быстрый просмотр</a>
           </div>
         </article>
       </li>
@@ -392,11 +392,11 @@
           <h3 class="visually-hidden">Сливочное с кусочками черного шоколада</h3>
           <img class="product-card__img" src="img/ice-cream__black-chocolate.png" width="267" height="267"
                alt="Сливочное с кусочками черного шоколада">
-          <b class="product-card__icecream-price">355&nbsp;&#8381;<span
+          <b class="product-card__icecream-price">355&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочное с кусочками черного шоколада</a>
           <div class="product-card__active">
-            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+            <a class="button product-card__button button--red" href="#">Быстрый просмотр</a>
           </div>
         </article>
       </li>
@@ -405,25 +405,25 @@
           <h3 class="visually-hidden">Сливочное с мятным сиропом</h3>
           <img class="product-card__img" src="img/ice-cream__mint.png" width="267" height="267"
                alt="Сливочное с мятным сиропом">
-          <b class="product-card__icecream-price">420&nbsp;&#8381;<span
+          <b class="product-card__icecream-price">420&#8381;<span
             class="product-card__icecream-measure-weight">/кг</span></b>
           <a class="product-card__icecream-link" href="#">Сливочное с мятным сиропом</a>
           <div class="product-card__active">
-            <a class="button catalog-button button--red" href="#">Быстрый просмотр</a>
+            <a class="button product-card__button button--red" href="#">Быстрый просмотр</a>
           </div>
         </article>
       </li>
     </ul>
-    <ul class="paginator__list  top--border">
-      <li class="paginator__item"><a href="#" class="paginator__link bottom--markers previous--page"
+    <ul class="paginator-list  top--border">
+      <li class="paginator-list__item"><a href="#" class="paginator-list__link bottom--markers previous--page"
                                      aria-label="Предыдущая страница"></a>
       </li>
-      <li class="paginator__item"><a href="#" class="paginator__link bottom--markers">1</a></li>
-      <li class="paginator__item"><a href="#" class="paginator__link bottom--markers">2</a></li>
-      <li class="paginator__item"><a href="#" class="paginator__link bottom--markers">3</a></li>
-      <li class="paginator__item"><a href="#" class="paginator__link bottom--markers">4</a></li>
-      <li class="paginator__item"><a href="#" class="paginator__link bottom--markers">5</a></li>
-      <li class="paginator__item"><a href="#" class="paginator__link bottom--markers next--page"
+      <li class="paginator-list__item"><a href="#" class="paginator-list__link bottom--markers">1</a></li>
+      <li class="paginator-list__item"><a href="#" class="paginator-list__link bottom--markers">2</a></li>
+      <li class="paginator-list__item"><a href="#" class="paginator-list__link bottom--markers">3</a></li>
+      <li class="paginator-list__item"><a href="#" class="paginator-list__link bottom--markers">4</a></li>
+      <li class="paginator-list__item"><a href="#" class="paginator-list__link bottom--markers">5</a></li>
+      <li class="paginator-list__item"><a href="#" class="paginator-list__link bottom--markers next--page"
                                      aria-label="Следующая страница"></a></li>
     </ul>
   </section>
